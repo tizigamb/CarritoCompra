@@ -8,7 +8,7 @@ namespace CarritoCompras
 {
     class Ticket
     {
-        public static int _ultimoId = 0;
+        private static int _ultimoId = 0;
 
         public DateTime fecha { get; set; }
         public int id { get; set; }
