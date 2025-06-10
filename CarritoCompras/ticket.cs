@@ -12,17 +12,37 @@ namespace CarritoCompras
 
         public DateTime fecha { get; set; }
         public int id { get; set; }
-        public List<ItemCarrito> producto { get; set; }
+        public List<ItemCarrito> productos { get; set; }
         public decimal total { get; set; }
 
-        public Ticket(List<ItemCarrito> producto)
+        public Ticket()
         {
             this.id = ++_ultimoId;
             this.fecha = DateTime.Now;
-            this.producto = producto;
+            this.productos = new List<ItemCarrito>();
+            this.total = 0;
+        }
 
-            // calcular subtotal con descuento por cantidad
-            decimal subtotal = producto.Sum(item =>
+        public void agregar_producto(ItemCarrito producto)
+        {
+            if (producto == null)
+            {
+                throw new ArgumentNullException(nameof(producto), "El producto no puede ser nulo.");
+            }
+
+            // Verificar si el producto ya existe en el ticket
+            var itemExistente = productos.FirstOrDefault(p => p.producto.id == producto.producto.id);
+            if (itemExistente != null)
+            {
+                itemExistente.cantidad += producto.cantidad;
+            }
+            else
+            {
+                productos.Add(producto);
+            }
+
+            // Recalcular total
+            decimal subtotal = productos.Sum(item =>
             {
                 decimal itemSubtotal = item.producto.precio * item.cantidad;
                 if (item.cantidad >= 5)
@@ -32,10 +52,19 @@ namespace CarritoCompras
                 return itemSubtotal;
             });
             this.total = subtotal * 1.21m;
+        }
 
-            if (producto == null || !producto.Any())
+        public void total_a_pagar()
+        {
+            Console.WriteLine("\n");
+            Console.WriteLine("\n" + total);
+        }
+
+        public void contenido_carrito()
+        {
+            foreach (var item in productos)
             {
-                throw new ArgumentException("El ticket debe contener al menos un producto.");
+                Console.WriteLine($"Nombre: {item.producto.nombre}, Cantidad: {item.cantidad}, Precio unitario: {item.producto.precio}, Subtotal: {item.cantidad * item.producto.precio}");
             }
         }
     }
