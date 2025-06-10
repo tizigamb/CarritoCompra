@@ -13,6 +13,11 @@ namespace CarritoCompras
 
         public ItemCarrito(Producto producto, int cantidad)
         {
+            if (cantidad <= 0)
+            {
+                throw new ArgumentException("La cantidad debe ser mayor que cero.");
+            }
+
             this.producto = producto;
             this.cantidad = cantidad;
         }

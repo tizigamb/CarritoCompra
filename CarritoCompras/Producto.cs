@@ -18,6 +18,16 @@ namespace CarritoCompras
 
         public Producto(string nombre, decimal precio, int stock, Categoria categoria)
         {
+            if(precio < 0)
+            {
+                throw new ArgumentException("El precio no puede ser negativo.");
+            }
+
+            if (stock < 0)
+            {
+                throw new ArgumentException("El stock no puede ser negativo.");
+            }
+
             this.id = ++_ultimoId;
             this.nombre = nombre;
             this.precio = precio;

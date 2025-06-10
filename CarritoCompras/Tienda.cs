@@ -10,6 +10,7 @@ namespace CarritoCompras
     {
         public List<Producto> productos_disponibles { get; set; }
         public List<Categoria> categorias_existentes { get; set; }
+        public Ticket historial { get; set; }
 
         public Tienda()
         {
