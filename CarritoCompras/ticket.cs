@@ -20,7 +20,19 @@ namespace CarritoCompras
             this.id = ++_ultimoId;
             this.fecha = DateTime.Now;
             this.producto = producto;
-            this.total = producto.Sum(item => item.producto.precio * item.cantidad) * 1.21m; // Asumiendo un IVA del 21%
+
+            // calcular subtotal con descuento por cantidad
+            decimal subtotal = producto.Sum(item =>
+            {
+                decimal itemSubtotal = item.producto.precio * item.cantidad;
+                if (item.cantidad >= 5)
+                {
+                    itemSubtotal *= 0.85m;
+                }
+                return itemSubtotal;
+            });
+            this.total = subtotal * 1.21m;
+
             if (producto == null || !producto.Any())
             {
                 throw new ArgumentException("El ticket debe contener al menos un producto.");
