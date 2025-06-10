@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/aqua/.dotnet/store/|arch|/|tfm|",
+      "/home/aqua/.nuget/packages"
+    ]
+  }
+}

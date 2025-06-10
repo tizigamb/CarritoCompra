@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/aqua/Desktop/CarritoCompra/CarritoCompras/CarritoCompras.csproj": {}
+    "/home/aqua/Desktop/testing/testing.csproj": {}
   },
   "projects": {
-    "/home/aqua/Desktop/CarritoCompra/CarritoCompras/CarritoCompras.csproj": {
+    "/home/aqua/Desktop/testing/testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/aqua/Desktop/CarritoCompra/CarritoCompras/CarritoCompras.csproj",
-        "projectName": "CarritoCompras",
-        "projectPath": "/home/aqua/Desktop/CarritoCompra/CarritoCompras/CarritoCompras.csproj",
+        "projectUniqueName": "/home/aqua/Desktop/testing/testing.csproj",
+        "projectName": "testing",
+        "projectPath": "/home/aqua/Desktop/testing/testing.csproj",
         "packagesPath": "/home/aqua/.nuget/packages/",
-        "outputPath": "/home/aqua/Desktop/CarritoCompra/CarritoCompras/obj/",
+        "outputPath": "/home/aqua/Desktop/testing/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/aqua/.nuget/NuGet/NuGet.Config"
