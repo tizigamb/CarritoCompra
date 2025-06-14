@@ -19,7 +19,7 @@ namespace CarritoCompras
         {
             foreach (var item in items)
             {
-                Console.WriteLine($"Nombre: {item.producto.nombre}, Cantidad: {item.cantidad}, Precio unitario: {item.producto.precio}, Subtotal: {item.cantidad * item.producto.precio}");
+                Console.WriteLine($"Nombre: {item.producto.nombre}, Cantidad: {item.cantidad}, Precio unitario: {item.producto.precio}, Subtotal: {(item.cantidad >= 5 ? 0.85m * item.cantidad * item.producto.precio : item.cantidad * item.producto.precio)}");
             }
         }
 

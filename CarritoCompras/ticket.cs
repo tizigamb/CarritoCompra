@@ -25,7 +25,21 @@ namespace CarritoCompras
             this.id = ++_ultimoId;
             this.fecha = DateTime.Now;
             this.total = carrito.total_a_pagar();
-            this.items_comprados = carrito;
+            this.items_comprados = new Carrito();
+
+            foreach (var item in carrito.items) // me aseguro de que no se borre el contenido del carrito
+            {
+                var productoCopia = new Producto(
+                    item.producto.nombre,
+                    item.producto.precio,
+                    item.producto.stock,
+                    item.producto.categoria
+                );
+                productoCopia.id = item.producto.id;
+
+                var itemCopia = new ItemCarrito(productoCopia, item.cantidad);
+                this.items_comprados.items.Add(itemCopia);
+            }
         }
     }
 }

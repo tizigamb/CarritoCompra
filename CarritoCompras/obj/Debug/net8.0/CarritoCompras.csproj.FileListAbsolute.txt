@@ -13,3 +13,18 @@
 /home/aqua/Desktop/CarritoCompra/CarritoCompras/obj/Debug/net8.0/CarritoCompras.pdb
 /home/aqua/Desktop/CarritoCompra/CarritoCompras/obj/Debug/net8.0/CarritoCompras.genruntimeconfig.cache
 /home/aqua/Desktop/CarritoCompra/CarritoCompras/obj/Debug/net8.0/ref/CarritoCompras.dll
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\bin\Debug\net8.0\CarritoCompras.exe
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\bin\Debug\net8.0\CarritoCompras.deps.json
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\bin\Debug\net8.0\CarritoCompras.runtimeconfig.json
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\bin\Debug\net8.0\CarritoCompras.dll
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\bin\Debug\net8.0\CarritoCompras.pdb
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\obj\Debug\net8.0\CarritoCompras.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\obj\Debug\net8.0\CarritoCompras.AssemblyInfoInputs.cache
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\obj\Debug\net8.0\CarritoCompras.AssemblyInfo.cs
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\obj\Debug\net8.0\CarritoCompras.csproj.CoreCompileInputs.cache
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\obj\Debug\net8.0\CarritoCompras.sourcelink.json
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\obj\Debug\net8.0\CarritoCompras.dll
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\obj\Debug\net8.0\refint\CarritoCompras.dll
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\obj\Debug\net8.0\CarritoCompras.pdb
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\obj\Debug\net8.0\CarritoCompras.genruntimeconfig.cache
+D:\Lucas\AA IPS\6to año 2025\Adaptación_ambiente_laboral\CarritoCompra\CarritoCompras\obj\Debug\net8.0\ref\CarritoCompras.dll
