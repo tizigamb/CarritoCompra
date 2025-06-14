@@ -1,5 +1,13 @@
 # Trabajo Práctico: Carrito de Compras
 
+## IMPORTANTE
+
+Por favor ejecutar el proyecto con el siguiente comando
+
+```bash
+dotnet run -- 1 2 3  # podés cambiar el orden de los numeros como quieras ;)
+```
+
 ## Enunciado
 
 Se nos encargo el desarrollo del modulo del "carrito de compras" de una aplicacion. El cliente requiere las funcionalidades basicas de un carrito de compras como agregar y eliminar un item al carrito, calcular el precio final a pagar, etc. Tambien tenemos a cargo la implementacion de las clases adicionales necesarias para el correcto funcionamiento del mismo. 
