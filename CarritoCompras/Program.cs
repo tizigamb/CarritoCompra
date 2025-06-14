@@ -6,7 +6,6 @@ namespace CarritoCompras
     {
         static void Main(string[] args)
         {
-
             Tienda verduleria = new Tienda();
 
             verduleria.categorias_existentes.Add(new Categoria("Verduras", "Verduras frescas"));
@@ -67,5 +66,6 @@ namespace CarritoCompras
 
             panaderia.productos_existentes.Add(cafe_jarrita);
             panaderia.productos_existentes.Add(cafe_cortado);
+        }
     }
 }
