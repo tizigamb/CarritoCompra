@@ -15,12 +15,17 @@ namespace CarritoCompras
         public decimal total { get; set; }
         public Carrito items_comprados { get; set; }
 
-        public Ticket()
+        public Ticket(Carrito carrito)
         {
+            if (carrito == null)
+            {
+                throw new ArgumentNullException(nameof(carrito), "El carrito no puede ser nulo.");
+            }
+
             this.id = ++_ultimoId;
             this.fecha = DateTime.Now;
-            this.total = 0;
-            this.items_comprados = new Carrito();
+            this.total = carrito.total_a_pagar();
+            this.items_comprados = carrito;
         }
 
         /*public void agregar_producto(ItemCarrito producto)
