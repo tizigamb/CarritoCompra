@@ -153,5 +153,52 @@ namespace CarritoCompras
             Console.WriteLine($"Ticket ID: {ticket.id}, Fecha: {ticket.fecha}, Total: {ticket.total}");
             ticket.items_comprados.contenido_carrito();
         }
+
+        public void CargarDatos(int flag)
+        {
+            switch (flag)
+            {
+                case 1:
+                    this.categorias_existentes.Add(new Categoria("Verduras", "Verduras frescas"));
+                    this.categorias_existentes.Add(new Categoria("Frutas", "Frutas frescas"));
+
+                    this.productos_existentes.Add(new Producto("Tomate", 100, 50, this.categorias_existentes[0]));
+                    this.productos_existentes.Add(new Producto("Lechuga", 80, 20, this.categorias_existentes[0]));
+                    this.productos_existentes.Add(new Producto("Zanahoria", 60, 40, this.categorias_existentes[0]));
+
+                    this.productos_existentes.Add(new Producto("Naranja", 120, 25, this.categorias_existentes[1]));
+                    this.productos_existentes.Add(new Producto("Banana", 90, 35, this.categorias_existentes[1]));
+                    this.productos_existentes.Add(new Producto("Manzana", 150, 30, this.categorias_existentes[1]));
+
+                    break;
+                case 2:
+                    this.categorias_existentes.Add(new Categoria("Carnes", "Carne de vaca"));
+                    this.categorias_existentes.Add(new Categoria("Aves", "Carne de pollo"));
+                    this.categorias_existentes.Add(new Categoria("Cerdo", "Carne de cerdo"));
+
+                    this.productos_existentes.Add(new Producto("Asado", 2000, 10, this.categorias_existentes[0]));
+                    this.productos_existentes.Add(new Producto("Pollo", 1500, 15, this.categorias_existentes[1]));
+                    this.productos_existentes.Add(new Producto("Cerdo", 1800, 12, this.categorias_existentes[2]));
+
+                    break;
+                case 3:
+                    this.categorias_existentes.Add(new Categoria("Pan", "Pan recién hecho"));
+                    this.categorias_existentes.Add(new Categoria("Facturas", "Productos de pastelería"));
+                    this.categorias_existentes.Add(new Categoria("Café", "Café de máquina"));
+
+                    this.productos_existentes.Add(new Producto("Pan", 50, 100, this.categorias_existentes[0]));
+                    this.productos_existentes.Add(new Producto("Bizcocho", 70, 60, this.categorias_existentes[0]));
+
+                    this.productos_existentes.Add(new Producto("Medialuna", 30, 80, this.categorias_existentes[1]));
+                    this.productos_existentes.Add(new Producto("Cañoncito de dulce de leche", 40, 50, this.categorias_existentes[1]));
+
+                    this.productos_existentes.Add(new Producto("Café en jarrita", 120, 200, this.categorias_existentes[2]));
+                    this.productos_existentes.Add(new Producto("Café cortado", 100, 150, this.categorias_existentes[2]));
+
+                    break;
+                default:
+                    throw new ArgumentException("Flag no válido");
+            }
+        }
     }
 }
