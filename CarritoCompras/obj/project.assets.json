@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net8.0": []
   },
   "packageFolders": {
     "C:\\Users\\ruber\\.nuget\\packages\\": {}
@@ -13,24 +13,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
+      "projectUniqueName": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\Carrito_Compra\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
       "projectName": "CarritoCompras",
-      "projectPath": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
+      "projectPath": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\Carrito_Compra\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
       "packagesPath": "C:\\Users\\ruber\\.nuget\\packages\\",
-      "outputPath": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\obj\\",
+      "outputPath": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\Carrito_Compra\\CarritoCompra\\CarritoCompras\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ruber\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -46,8 +46,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -59,30 +59,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.17, 5.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

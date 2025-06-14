@@ -1,0 +1,14 @@
+/home/aqua/Desktop/testing/bin/Debug/net8.0/testing
+/home/aqua/Desktop/testing/bin/Debug/net8.0/testing.deps.json
+/home/aqua/Desktop/testing/bin/Debug/net8.0/testing.runtimeconfig.json
+/home/aqua/Desktop/testing/bin/Debug/net8.0/testing.dll
+/home/aqua/Desktop/testing/bin/Debug/net8.0/testing.pdb
+/home/aqua/Desktop/testing/obj/Debug/net8.0/testing.GeneratedMSBuildEditorConfig.editorconfig
+/home/aqua/Desktop/testing/obj/Debug/net8.0/testing.AssemblyInfoInputs.cache
+/home/aqua/Desktop/testing/obj/Debug/net8.0/testing.AssemblyInfo.cs
+/home/aqua/Desktop/testing/obj/Debug/net8.0/testing.csproj.CoreCompileInputs.cache
+/home/aqua/Desktop/testing/obj/Debug/net8.0/testing.dll
+/home/aqua/Desktop/testing/obj/Debug/net8.0/refint/testing.dll
+/home/aqua/Desktop/testing/obj/Debug/net8.0/testing.pdb
+/home/aqua/Desktop/testing/obj/Debug/net8.0/testing.genruntimeconfig.cache
+/home/aqua/Desktop/testing/obj/Debug/net8.0/ref/testing.dll

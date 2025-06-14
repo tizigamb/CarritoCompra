@@ -8,7 +8,7 @@ namespace CarritoCompras
 {
     class Producto
     {
-        public static int _ultimoId = 0;
+        private static int _ultimoId = 0;
 
         public int id { get; set; }
         public string nombre { get; set; }
