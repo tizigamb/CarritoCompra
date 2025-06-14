@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj": {}
+    "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\Carrito_Compra\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj": {}
   },
   "projects": {
-    "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj": {
+    "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\Carrito_Compra\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
+        "projectUniqueName": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\Carrito_Compra\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
         "projectName": "CarritoCompras",
-        "projectPath": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
+        "projectPath": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\Carrito_Compra\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
         "packagesPath": "C:\\Users\\ruber\\.nuget\\packages\\",
-        "outputPath": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\obj\\",
+        "outputPath": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\Carrito_Compra\\CarritoCompra\\CarritoCompras\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ruber\\AppData\\Roaming\\NuGet\\NuGet.Config"
