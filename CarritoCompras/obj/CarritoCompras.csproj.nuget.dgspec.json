@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/aqua/Desktop/CarritoCompra/CarritoCompras/CarritoCompras.csproj": {}
+    "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj": {}
   },
   "projects": {
-    "/home/aqua/Desktop/CarritoCompra/CarritoCompras/CarritoCompras.csproj": {
+    "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/aqua/Desktop/CarritoCompra/CarritoCompras/CarritoCompras.csproj",
+        "projectUniqueName": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
         "projectName": "CarritoCompras",
-        "projectPath": "/home/aqua/Desktop/CarritoCompra/CarritoCompras/CarritoCompras.csproj",
-        "packagesPath": "/home/aqua/.nuget/packages/",
-        "outputPath": "/home/aqua/Desktop/CarritoCompra/CarritoCompras/obj/",
+        "projectPath": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
+        "packagesPath": "C:\\Users\\ruber\\.nuget\\packages\\",
+        "outputPath": "D:\\Lucas\\AA IPS\\6to año 2025\\Adaptación_ambiente_laboral\\CarritoCompra\\CarritoCompras\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/aqua/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ruber\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.116/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

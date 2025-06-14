@@ -12,18 +12,16 @@ namespace CarritoCompras
 
         public DateTime fecha { get; set; }
         public int id { get; set; }
-        public List<ItemCarrito> productos { get; set; }
         public decimal total { get; set; }
 
         public Ticket()
         {
             this.id = ++_ultimoId;
             this.fecha = DateTime.Now;
-            this.productos = new List<ItemCarrito>();
             this.total = 0;
         }
 
-        public void agregar_producto(ItemCarrito producto)
+        /*public void agregar_producto(ItemCarrito producto)
         {
             if (producto == null)
             {
@@ -66,6 +64,6 @@ namespace CarritoCompras
             {
                 Console.WriteLine($"Nombre: {item.producto.nombre}, Cantidad: {item.cantidad}, Precio unitario: {item.producto.precio}, Subtotal: {item.cantidad * item.producto.precio}");
             }
-        }
+        }*/
     }
 }
