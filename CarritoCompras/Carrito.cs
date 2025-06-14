@@ -28,8 +28,18 @@ namespace CarritoCompras
             decimal total = 0;
             foreach (var item in items)
             {
-                total += item.cantidad * item.producto.precio;
+                decimal subtotal = item.cantidad * item.producto.precio;
+
+                if (item.cantidad >= 5)
+                {
+                    subtotal *= 0.85m;
+                }
+
+                total += subtotal;
             }
+
+            total *= 1.21m;
+
             return total;
         }
     }

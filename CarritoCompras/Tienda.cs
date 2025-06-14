@@ -88,6 +88,19 @@ namespace CarritoCompras
             }
         }
 
+        public void generar_ticket(Carrito carrito)
+        {
+            if (carrito.items.Count == 0)
+            {
+                throw new InvalidOperationException("El carrito está vacío. No se puede generar un ticket.");
+            }
+
+            Ticket ticket = new Ticket(carrito);
+            historial.Add(ticket);
+            Console.WriteLine($"Ticket generado con ID: {ticket.id}, Fecha: {ticket.fecha}, Total: {ticket.total}");
+            carrito.items.Clear(); // limpiar el cacharro
+        }
+
         public void finalizar_compra(Carrito carrito)
         {
             foreach (var item in carrito.items)
@@ -111,6 +124,34 @@ namespace CarritoCompras
             }
 
             Console.WriteLine($"Pagaste ${carrito.total_a_pagar()}");
+            generar_ticket(carrito);
+        }
+
+        public void mostrar_historial()
+        {
+            Console.WriteLine("\n");
+            if (historial.Count == 0)
+            {
+                Console.WriteLine("No hay historial de compras.");
+                return;
+            }
+            foreach (var ticket in historial)
+            {
+                Console.WriteLine($"Ticket ID: {ticket.id}, Fecha: {ticket.fecha}, Total: {ticket.total}");
+                ticket.items_comprados.contenido_carrito();
+            }
+        }
+
+        public void mostrar_ticket(int id_ticket)
+        {
+            var ticket = historial.FirstOrDefault(t => t.id == id_ticket);
+            if (ticket == null)
+            {
+                throw new ArgumentException("El ticket no existe.");
+            }
+
+            Console.WriteLine($"Ticket ID: {ticket.id}, Fecha: {ticket.fecha}, Total: {ticket.total}");
+            ticket.items_comprados.contenido_carrito();
         }
     }
 }
