@@ -54,7 +54,7 @@ namespace CarritoCompras
             }
         }
 
-        public void agregar_carrito(int id_producto, int cant)
+        public void agregar_item_carrito(int id_producto, int cant)
         {
             var producto_filtrado = productos_existentes.Where(p => p.id.Equals(id_producto)).FirstOrDefault();
             if (producto_filtrado == null)
@@ -66,6 +66,51 @@ namespace CarritoCompras
                 throw new ArgumentException("La cantidad no puede ser igual o menor a cero");
             }
             carrito.items.Add(new ItemCarrito(producto_filtrado, cant));
+        }
+
+        public void eliminar_item_carrito(int id_producto, int cant)
+        {
+            if (cant <= 0)
+            {
+                throw new ArgumentException("La cantidad no puede ser igual o menor a cero");
+            }
+
+            var item = carrito.items.FirstOrDefault(i => i.producto.id == id_producto);
+            if (item == null)
+            {
+                throw new ArgumentException("El carrito no tiene ese producto");
+            }
+
+            carrito.items.Remove(item);
+            if (item.cantidad > cant)
+            {
+                carrito.items.Add(new ItemCarrito(item.producto, item.cantidad - cant));
+            }
+        }
+
+        public void finalizar_compra(Carrito carrito)
+        {
+            foreach (var item in carrito.items)
+            {
+                var productoEnTienda = productos_existentes.FirstOrDefault(p => p.id == item.producto.id);
+                if (productoEnTienda != null)
+                {
+                    if (productoEnTienda.stock >= item.cantidad)
+                    {
+                        productoEnTienda.stock -= item.cantidad;
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException($"No hay suficiente stock para el producto {productoEnTienda.nombre}.");
+                    }
+                }
+                else
+                {
+                    throw new InvalidOperationException($"El producto con ID {item.producto.id} no existe en la tienda.");
+                }
+            }
+
+            Console.WriteLine($"Pagaste ${carrito.total_a_pagar()}");
         }
     }
 }

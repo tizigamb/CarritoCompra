@@ -13,12 +13,14 @@ namespace CarritoCompras
         public DateTime fecha { get; set; }
         public int id { get; set; }
         public decimal total { get; set; }
+        public Carrito items_comprados { get; set; }
 
         public Ticket()
         {
             this.id = ++_ultimoId;
             this.fecha = DateTime.Now;
             this.total = 0;
+            this.items_comprados = new Carrito();
         }
 
         /*public void agregar_producto(ItemCarrito producto)
